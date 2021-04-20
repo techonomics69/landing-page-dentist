@@ -11,36 +11,52 @@
     <div class="container">
         <div class="card">
             <div class="content">
-                <h2>01</h2>
-                <h3>Card One</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut molestias incidunt nobis magnam? Rem deleniti quis blanditiis nulla, aliquam eos ea iste reprehenderit praesentium, facere doloremque nihil aspernatur asperiores impedit!</p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <h2>02</h2>
-                <h3>Card Two</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut molestias incidunt nobis magnam? Rem deleniti quis blanditiis nulla, aliquam eos ea iste reprehenderit praesentium, facere doloremque nihil aspernatur asperiores impedit!</p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <h2>03</h2>
-                <h3>Card Three</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut molestias incidunt nobis magnam? Rem deleniti quis blanditiis nulla, aliquam eos ea iste reprehenderit praesentium, facere doloremque nihil aspernatur asperiores impedit!</p>
-                <a href="#">Read more</a>
+                <form>
+                    <h2>Dr. David L. Miller, <br> 
+                        D.D.S.
+                    </h2>
+                    <h3>New Patient Intake</h3>
+                    <p>Kindly fill out the form below before scheduling an appointment.</p>
+                    <label>Name</label>
+                    <br>
+                    <input>
+                    <br>
+                    <label>Age</label>
+                    <br>
+                    <input>
+                    <br>
+                    <label>Address</label>
+                    <br>
+                    <input>
+                    <br>
+                    <div class="checkbox">
+                        <label>Under 18?</label>
+                        <input type="checkbox">
+                        <br>
+                        <label>Reason for visit:</label>
+                        <br>
+                        <label>Routine cleaning</label>
+                        <input type="checkbox">
+                        <br>
+                        <label>Tooth ache</label>
+                        <input type="checkbox">
+                        <br>
+                        <label>Cosmetic procedure</label>
+                        <input type="checkbox">
+                        <br>
+                        <a href="#">Appointment</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400,
+		max: 5,
+		speed: 700,
         glare: true,
-        "max-glare": 1,
+        "max-glare": .5,
 	});
 </script>    
 </body>

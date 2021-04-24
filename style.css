@@ -49,7 +49,6 @@ body::after {
     width: 100%;
     flex-wrap: wrap;
     z-index: 1;
-    border: 1px solid red;
 }
 
 /* GLASSMORPHISM EFFECT FOR CARD */
@@ -91,10 +90,6 @@ body::after {
     font-weight: 300;
     color: #FFF;
     z-index: 1;
-}
-
-form {
-    /* border: 5px dashed orchid; */
 }
 
 form input, textarea {

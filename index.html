@@ -11,42 +11,36 @@
     <div class="container">
         <div class="card">
             <div class="content">
-                <form>
-                    <h2>Dr. David L. Miller, <br> 
-                        D.D.S.
-                    </h2>
-                    <h3>New Patient Intake</h3>
-                    <p>Kindly fill out the form below before scheduling an appointment.</p>
-                    <label>Name</label>
-                    <br>
-                    <input>
-                    <br>
-                    <label>Age</label>
-                    <br>
-                    <input>
-                    <br>
-                    <label>Address</label>
-                    <br>
-                    <input>
-                    <br>
-                    <div class="checkbox">
-                        <label>Under 18?</label>
-                        <input type="checkbox">
+                <div class="wrapper">
+                    <h3 class="contact">Dr. David L. Miller, DDS</h3>
+                    <ul class="contact">
+                        <li>1 Charlton Dr, Hampton, VA 23666</li>
+                        <li>(757) 838-0008</li>
+                    </ul>
+                    <form>
+                        <label>Name</label>
+                        <br>
+                        <input>
+                        <br>
+                        <label>Age</label>
+                        <br>
+                        <input class="age">
+                        <br>
+                        <label>Phone</label>
+                        <br>
+                        <input class="phone" type="tel">
+                        <br>
+                        <label>Email</label>
+                        <br>
+                        <input class="email" type="email">
                         <br>
                         <label>Reason for visit:</label>
                         <br>
-                        <label>Routine cleaning</label>
-                        <input type="checkbox">
-                        <br>
-                        <label>Tooth ache</label>
-                        <input type="checkbox">
-                        <br>
-                        <label>Cosmetic procedure</label>
-                        <input type="checkbox">
-                        <br>
-                        <a href="#">Appointment</a>
-                    </div>
-                </form>
+                        <textarea name="" id="" cols="40" rows="3"></textarea>
+                    </form>
+                        <a class="button" href="#">Set Appointment</a>
+                        <a class="button" href="#">Intake Form</a>  
+                </div>
             </div>
         </div>
     </div>
@@ -56,7 +50,7 @@
 		max: 5,
 		speed: 700,
         glare: true,
-        "max-glare": .5,
+        "max-glare": .35,
 	});
 </script>    
 </body>

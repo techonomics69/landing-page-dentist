@@ -73,7 +73,8 @@ body::after {
     backdrop-filter: blur(5px); 
 }
 
-.wrapper {
+.wrapper,
+h3 {
     color: #FFF;
     padding: 0px 8px 0px 8px;
 }
@@ -85,10 +86,9 @@ body::after {
 }
 
 /* Dr. David L. Miller, DDS */
-.container .card .content h3 {
+h3 {
     font-size: 1.8em;
     font-weight: 300;
-    color: #FFF;
     z-index: 1;
 }
 
@@ -124,4 +124,24 @@ textarea  {
     background: rgba(255, 255, 255, .2);
     color: rgba(255, 255, 255, .5);
     margin-top: 0px;
+}
+
+.signature {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+
+    font-size: xx-small;
+    color: rgba(255, 255, 255, .5);
+}
+
+.signature a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+.signature a:hover {
+    border: 1px solid olive;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer
 }

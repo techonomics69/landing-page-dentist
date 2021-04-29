@@ -4,58 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- RESET -->
     <link rel="stylesheet" href="reset.css">
+
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
     <title>Glassmorphism</title>
 </head>
 <body>
-    <div class="container">
+    <main>
         <div class="card">
-            <div class="content">
-                <div class="wrapper">
-                    <h3 class="contact">Dr. David L. Miller, DDS</h3>
-                    <ul class="contact">
-                        <li>1 Charlton Dr, Hampton, VA 23666</li>
-                        <li>(757) 838-0008</li>
-                    </ul>
-                    <form>
-                        <label>Name</label>
-                        <br>
-                        <input>
-                        <br>
-                        <label>Age</label>
-                        <br>
-                        <input class="age">
-                        <br>
-                        <label>Phone</label>
-                        <br>
-                        <input class="phone" type="tel">
-                        <br>
-                        <label>Email</label>
-                        <br>
-                        <input class="email" type="email">
-                        <br>
-                        <label>Reason for visit:</label>
-                        <br>
-                        <textarea name="" id="" cols="40" rows="3"></textarea>
-                    </form>
-                        <a class="button" href="#">Set Appointment</a>
-                        <a class="button" href="#">Intake Form</a>  
-                </div>
+            <div class="card-content">
+                <div class="title">Dr. David L. Miller, DDS</div>
+                
+                <address>
+                    <div>1 Charlton Dr, Hampton, VA 23666</div>
+                    <div>(757) 838-0008</div>
+                </address>
+
+                <form>
+                    <div class="form-row">
+                        <label class="form-label">Name</label>
+                        <input class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Age</label>
+                        <input class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Phone</label>
+                        <input class="form-input" type="tel">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Email</label>
+                        <input class="form-input" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Reason for Visit</label>
+                        <textarea class="form-input"></textarea>
+                    </div>
+
+                    <div class="buttons">
+                        <a class="button" href="https://calendar.google.com/calendar/u/0/r" role="button">Set Appointment</a>
+                        <a class="button" href="./new-patient-intake.pdf" role="button">Intake Form</a>  
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
-    <span class="signature">Website created by <a class="signature-link" href="#">Patrick Mahloy</a><span>
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-<script>
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 5,
-		speed: 700,
-        glare: true,
-        "max-glare": .35,
-	});
-</script>    
+    </main>
+
+    <footer>
+        Website created by <a class="footer-link" href="https://github.com/ploymahloy">Patrick Mahloy</a>
+    </footer>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 5,
+            speed: 700,
+            glare: true,
+            "max-glare": 0.35,
+        });
+    </script>    
 </body>
 </html>

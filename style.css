@@ -2,104 +2,84 @@
     box-sizing: border-box;
 }
 
-/* BACKGROUND COLOR */
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    
-    min-height: 100vh;
-    
     font-family: 'Poppins', sans-serif;
-    background: #220038;
+    font-size: 16px;
+    
+    background-color: #220038;
+    color: white;
 }
 
-/* BOTTOM-RIGHT BACKGROUND CIRCLE */
-body::before {
+main {
+    display: flex;
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* CIRCLES */
+main::before,
+main::after {
     content: '';
+
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
+    
     width: 100%;
     height: 100%;
+    
     background: linear-gradient(#00d9ff, #9900ff);
+}
+
+/* BOTTOM-RIGHT BACKGROUND CIRCLE */
+main::before {
     clip-path: circle(30% at right 70%);
 }
 
 /* TOP-RIGHT BACKGROUND CIRCLE */
-body::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#00d9ff, #9900ff);
+main::after {
     clip-path: circle(50% at 10% 20%);
 }
 
-.container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    align-items: center;
-
-    z-index: 1;
-}
-
-/* GLASSMORPHISM EFFECT FOR CARD */
-.container .card {
-    position: relative;
-
-    height: auto;
-    
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.486);
     border-radius: 15px;
-    background: rgba(255, 255, 255, .1);
-    
-    display: flex;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    
-    border-top: 1px solid rgba(255, 255, 255, .5);
-    border-left: 1px solid rgba(255, 255, 255, .5);
+
+    min-width: 300px;
+    padding: 32px;
+
+    z-index: 3;
 }
 
-.wrapper {
-    color: #FFF;
-    padding: 8px;
-}
-
-/* ADDRESS AND PHONE */
-.contact {
-    list-style-type: none;
-    text-align: center;
-}
-
-/* Dr. David L. Miller, DDS */
-h3 {
-    font-size: 2em;
+.title {
+    font-size: 200%;
     font-weight: 300;
-    z-index: 1;
 }
 
-form input, textarea {
-    width: 45%;
-    padding: 3px;
+address {
+    margin-top: 8px;
+    line-height: 1.5;
 }
 
-.age {
-    width: 35px;
+.form-label {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+    font-weight: 400;
 }
 
-.email,
-textarea  {
-    width: 90%;
+.form-input {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .button {
@@ -107,37 +87,39 @@ textarea  {
     padding: 8px 20px;
     margin-top: 10px;
 
-    background: rgba(255, 255, 255, .5);
-    color: #161623;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.858);
     font-weight: 500;
     text-decoration: none;
     
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
 .button:hover {
-    background: rgba(255, 255, 255, .2);
-    color: rgba(255, 255, 255, .5);
-    margin-top: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.signature {
-    position: absolute;
+footer {
+    position: fixed;
     bottom: 5px;
     right: 20px;
+    z-index: 2;
 
-    font-size: xx-small;
-    color: rgba(255, 255, 255, .5);
+    font-size: 65%;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.signature a {
-    color: rgba(255, 255, 255, .5);
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
 
-.signature a:hover {
-    border: 1px solid olive;
-    color: rgba(255, 255, 255, .8);
-    cursor: pointer
+.footer-link:hover {
+    font-size: 150%;
+
+    color: rgba(255, 255, 255, 0.858);
+
+    transition: 650ms;
 }

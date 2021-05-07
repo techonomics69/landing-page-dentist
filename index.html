@@ -10,7 +10,7 @@
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link hsref="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 
@@ -22,6 +22,7 @@
     <main>
         <div class="card">
             <div class="card-content">
+                
                 <div class="title">Dr. David L. Miller, DDS</div>
                 
                 <address>
@@ -30,6 +31,7 @@
                 </address>
 
                 <form>
+                    <a class="button" href="./new-patient-intake.pdf" role="button">Intake Form</a>  
                     <div class="form-row">
                         <label class="form-label">Name</label>
                         <input class="form-input">
@@ -50,10 +52,25 @@
                         <label class="form-label">Reason for Visit</label>
                         <textarea class="form-input"></textarea>
                     </div>
-
-                    <div class="buttons">
-                        <a class="button" href="https://calendar.google.com/calendar/u/0/r" role="button">Set Appointment</a>
-                        <a class="button" href="./new-patient-intake.pdf" role="button">Intake Form</a>  
+                    <div class="form-row">
+                        <div class="column">
+                            <label class="form-label">Set Appointment</label>
+                            <input 
+                                type="date" 
+                                min="2019-01-01" 
+                                max="2022-12-31"
+                            />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="form-label">Text Confirmation</label>
+                        <input class="form-label" type="checkbox">
+                        <input
+                        type="tel"
+                        />
+                    </div>
+                    <div class="column column-3">
+                        <a class="button">Submit</a>
                     </div>
                 </form>
             </div>

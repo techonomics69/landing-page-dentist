@@ -1,3 +1,8 @@
+:root {
+  --teal: #008F83;
+  --white: #FFFFFF;
+}
+
 * {
   box-sizing: border-box;            
 }
@@ -10,7 +15,7 @@ body {
   font-family: 'Trirong', serif;          
   font-size: 20px;                   
 
-  background-color: rgb(0, 143, 131);        
+  background-color: var(--teal);        
 }
 
 h1 {
@@ -50,14 +55,14 @@ textarea {
   display: flex;                     
   flex-direction: row;               
 
-  border: 10px double white;  
+  border: 10px double var(--white);  
 
   border-radius: 10px;               
   overflow: hidden;                  
 }
 
 .flex-cell {
-  background-color: white;         
+  background-color: var(--white);         
 
   padding: 8px;                      
 }
@@ -65,7 +70,7 @@ textarea {
 .info {
   flex: 1;                           
 
-  border-right: 3px solid rgb(0, 143, 131);    
+  border-right: 3px solid var(--teal);    
 
   text-align: center;                
 }
@@ -116,7 +121,7 @@ footer {
 
   .info {
     border-right: none;              
-    border-bottom: 3px solid rgb(0, 143, 131); 
+    border-bottom: 3px solid var(--teal); 
   }
 
   .form-cell {

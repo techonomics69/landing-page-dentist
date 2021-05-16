@@ -4,90 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- RESET -->
+
     <link rel="stylesheet" href="reset.css">
-
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link hsref="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-
-    <title>Glassmorphism</title>
+    <title>Dr. David L. Miller, DDS</title>
 </head>
 <body>
-    <main>
-        <div class="card">
-            <div class="card-content">
-                
-                <div class="title">Dr. David L. Miller, DDS</div>
-                
-                <address>
-                    <div>1 Charlton Dr, Hampton, VA 23666</div>
-                    <div>(757) 838-0008</div>
-                </address>
-
-                <form>
-                    <a class="button" href="./new-patient-intake.pdf" role="button">Intake Form</a>  
-                    <div class="form-row">
-                        <label class="form-label">Name</label>
-                        <input class="form-input">
-                    </div>
-                    <div class="form-row">
-                        <label class="form-label">Age</label>
-                        <input class="form-input">
-                    </div>
-                    <div class="form-row">
-                        <label class="form-label">Phone</label>
-                        <input class="form-input" type="tel">
-                    </div>
-                    <div class="form-row">
-                        <label class="form-label">Email</label>
-                        <input class="form-input" type="email">
-                    </div>
-                    <div class="form-row">
-                        <label class="form-label">Reason for Visit</label>
-                        <textarea class="form-input"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <div class="column">
-                            <label class="form-label">Set Appointment</label>
-                            <input 
-                                type="date" 
-                                min="2019-01-01" 
-                                max="2022-12-31"
-                            />
-                        </div>
-                    </div>
-                    <div class="column">
-                        <label class="form-label">Text Confirmation</label>
-                        <input class="form-label" type="checkbox">
-                        <input
-                        type="tel"
-                        />
-                    </div>
-                    <div class="column column-3">
-                        <a class="button">Submit</a>
-                    </div>
-                </form>
-            </div>
+<body>
+  <div class="flex-wrapper">
+    <div class="flex-container">
+      <div class="flex-cell info">
+        <h1>Dr. David L. Miller, DDS</h1>
+        <address>
+          1 Charlton Drive
+          Hampton, VA 23666
+        </address>
+        <button>Intake Form</button>
+      </div>
+      <form class="flex-cell form">
+        <div class="form-cell">
+          <label>First Name</label>
+          <input required/>
         </div>
-    </main>
-
-    <footer>
-        Website created by <a class="footer-link" href="https://github.com/ploymahloy">Patrick Mahloy</a>
-    </footer>
-
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-            max: 5,
-            speed: 700,
-            glare: true,
-            "max-glare": 0.35,
-        });
-    </script>    
+        <div class="form-cell">
+          <label>Last Name</label>
+          <input required/>
+        </div>
+        <div class="form-cell">
+          <label>Cell Phone</label>
+          <input type="tel" required/>
+        </div>
+        <div class="form-cell">
+          <label>Introductory Call</label>
+          <input type="date" required/>
+        </div>
+        <div class="form-cell fullwidth">
+          <label>Email</label>
+          <input type="email" required/>
+        </div>
+        <div class="form-cell fullwidth">
+          <label>Reason for Visit</label>
+          <textarea required></textarea>
+        </div>
+        <div class="form-cell fullwidth buttons">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

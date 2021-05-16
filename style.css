@@ -1,125 +1,125 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;            
 }
 
+html,
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    
-    background-color: #220038;
-    color: white;
+  padding: 0;                        
+  margin: 0;                         
+
+  font-family: 'Trirong', serif;          
+  font-size: 20px;                   
+
+  background-color: rgb(0, 143, 131);        
 }
 
-main {
-    display: flex;
-    min-height: 100vh;
-
-    justify-content: center;
-    align-items: center;
-}
-
-/* CIRCLES */
-main::before,
-main::after {
-    content: '';
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
-    width: 100%;
-    height: 100%;
-    
-    background: linear-gradient(#00d9ff, #9900ff);
-}
-
-/* BOTTOM-RIGHT BACKGROUND CIRCLE */
-main::before {
-    clip-path: circle(30% at right 70%);
-}
-
-/* TOP-RIGHT BACKGROUND CIRCLE */
-main::after {
-    clip-path: circle(50% at 10% 20%);
-}
-
-.card {
-    border: 1px solid rgba(255, 255, 255, 0.486);
-    border-radius: 15px;
-    overflow: hidden;
-
-    min-width: 300px;
-    padding: 32px;
-
-    z-index: 3;
-}
-
-.title {
-    font-size: 200%;
-    font-weight: 300;
+h1 {
+  font-size: 32px;
 }
 
 address {
-    margin-top: 8px;
-    line-height: 1.5;
+  font-size: 14px;
 }
 
-.button {
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 10px;
-
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.75);
-    font-weight: 500;
-    text-decoration: none;
-    
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+label {
+  font-weight: bold; 
 }
 
-.button:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.85);
+input,
+textarea {
+  width: 100%;                       
 }
 
-.form-label {
-    display: inline-block;
-    margin-top: 8px;
-    margin-bottom: 4px;
-
-    font-weight: 400;
+input[type="date"] {
+  height: 21px;
 }
 
-.form-input {
-    width: 100%;
+textarea {
+  resize: none;                      
 }
 
-.column {
-    float: left;
-    width: 50%;
-} 
+.flex-wrapper {
+  display: flex;                      
+  justify-content: center;            
+  align-items: center;                
+  min-height: 100vh;                  
+}
+
+.flex-container {
+  width: 50%;                        
+  display: flex;                     
+  flex-direction: row;               
+
+  border: 10px double white;  
+
+  border-radius: 10px;               
+  overflow: hidden;                  
+}
+
+.flex-cell {
+  background-color: white;         
+
+  padding: 8px;                      
+}
+
+.info {
+  flex: 1;                           
+
+  border-right: 3px solid rgb(0, 143, 131);    
+
+  text-align: center;                
+}
+
+.form {
+  flex: 2;                           
+
+  display: flex;                     
+  flex-wrap: wrap;                   
+}
+
+.form-cell {
+  flex-grow: 1;                      
+  flex-basis: 50%;                   
+
+  padding: 4px;                      
+}
+
+.form-cell.fullwidth {
+  flex-grow: 1;                      
+  flex-basis: 100%;                  
+}
+
+.buttons {
+  text-align: right;                 
+}
 
 footer {
-    position: fixed;
-    bottom: 5px;
-    right: 20px;
-    z-index: 2;
-
-    font-size: 65%;
-    color: rgba(255, 255, 255, 0.5);
+  display: fixed;
 }
 
-.footer-link {
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-}
+/* MOBILE (Portrait) */
+@media (orientation: portrait) {
+  html,
+  body {
+    font-size: 20px;                 
+  }
 
-.footer-link:hover {
-    font-size: 150%;
+  .flex-container {
+    width: 80%;                      
+  }
 
-    color: rgba(255, 255, 255, 0.858);
+  .flex-container {
+    flex-direction: column;          
 
-    transition: 650ms;
+    margin: 20px 0;                  
+  }
+
+  .info {
+    border-right: none;              
+    border-bottom: 3px solid rgb(0, 143, 131); 
+  }
+
+  .form-cell {
+    flex-basis: 100%;                
+  }
 }

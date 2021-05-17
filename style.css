@@ -26,6 +26,12 @@ address {
   font-size: 14px;
 }
 
+.intake {
+  height: 3em;
+
+  width: 80%;
+}
+
 label {
   font-weight: bold; 
 }
@@ -40,7 +46,8 @@ input[type="date"] {
 }
 
 textarea {
-  resize: none;                      
+  resize: none;   
+  font-family: Georgia, 'Times New Roman', Times, serif;                   
 }
 
 .flex-wrapper {
@@ -72,7 +79,12 @@ textarea {
 
   border-right: 3px solid var(--teal);    
 
-  text-align: center;                
+  text-align: center;   
+  
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 
 .form {

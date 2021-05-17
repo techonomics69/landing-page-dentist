@@ -1,6 +1,6 @@
 :root {
   --teal: #008F83;
-  --white: #FFFFFF;
+  --white: white;
 }
 
 * {
@@ -96,6 +96,31 @@ textarea {
 
 .buttons {
   text-align: right;                 
+}
+
+.submit {
+  width: 100%;
+  height: 3em;
+
+  font-size: 0.75em;
+  font-weight: bold;
+
+  border: 3px solid var(--teal);
+  border-radius: 5px;
+
+  background-color: var(--white);
+  color: var(--teal);
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+.submit:active {
+  border: 5px double var(--white);
+  border-radius: 10px;
 }
 
 footer {

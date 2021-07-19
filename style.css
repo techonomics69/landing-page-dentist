@@ -91,7 +91,9 @@ textarea {
   flex: 2;                           
 
   display: flex;                     
-  flex-wrap: wrap;                   
+  flex-wrap: wrap;  
+  
+  padding: 15px;
 }
 
 .form-cell {
@@ -109,7 +111,10 @@ textarea {
 .submit {
   width: 100%;
   height: 3em;
+}
 
+.submit,
+.intake {
   font-size: 0.75em;
   font-weight: bold;
 
@@ -121,12 +126,15 @@ textarea {
 }
 
 .submit:hover,
-.submit:focus {
+.submit:focus,
+.intake:hover,
+.intake:focus {
   background-color: var(--teal);
   color: var(--white);
 }
 
-.submit:active {
+.submit:active,
+.intake:active {
   border: 5px solid var(--white);
   border-radius: 10px;
 }
@@ -152,12 +160,23 @@ footer {
     margin: 20px 0;                  
   }
 
+  .flex-cell.info > h1, 
+  .flex-cell.info > address, 
+  .flex-cell.info > button {
+    margin: 0.5em;
+  }
+
   .info {
     border-right: none;              
     border-bottom: 3px solid var(--teal); 
   }
 
+  .flex-cell.info > button,
   .form-cell {
-    flex-basis: 100%;                
+    flex-basis: 100%;            
+  }
+
+  .form {
+    padding: 5px;
   }
 }

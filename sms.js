@@ -5,10 +5,8 @@ const authToken = process.env.TWILIO_AUTH_TOKEN ;
 const client = require('twilio')(accountSid, authToken);
 
 client.messages.create({
-    body: 'Test SMS',
-    from: '+19494461307',
+    body: 'Test',
+    from: '+18042944909',
     to:'+18043964584'
-})
-
-.then(console.log('Message sent.'))
-.catch((err) => console.log(err));
+}).then(console.log('Message sent.'))
+  .catch((err) => console.log(err));

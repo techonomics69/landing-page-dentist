@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-
-    <title>Dr. David L. Miller, DDS</title>
+    <title>New Patients</title>
 </head>
 <body>
 <body>
@@ -22,7 +21,12 @@
           1 Charlton Drive
           Hampton, VA 23666
         </address>
-        <button class="intake">Intake Form</button>
+        <button 
+          onclick="downloadIntakeFile()"
+          class="intake"
+        >
+          Intake Form
+        </button>
       </div>
       <form class="flex-cell form">
         <div class="form-cell">
@@ -36,10 +40,6 @@
         <div class="form-cell">
           <label>Cell Phone*</label>
           <input type="tel" required/>
-        </div>
-        <div class="form-cell">
-          <label>Come Visit!*</label>
-          <input type="date" required/>
         </div>
         <div class="form-cell fullwidth">
           <label>Email*</label>
@@ -56,4 +56,5 @@
     </div>
   </div>
 </body>
+<script src="script.js"></script>
 </html>

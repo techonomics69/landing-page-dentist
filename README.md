@@ -2,11 +2,11 @@
 
 https://ploymahloy.github.io/landing-page-dentist/
 
-## Inspiration ##
+## Business Context ##
 
-My dentist does not have a landing page (or internet, but we'll save that for another day) and I figured this would be a great freelancing project! 
+This app, upon completion, takes user data from a form to reach out to prospective patients. Upon submission of the form, a modal will confirm the form was sent, AND Twilio's API will send the user a confirmation text.
 
-# References #
+## References ##
 
 * Twilio: https://www.youtube.com/watch?v=26X0rVLo6gc
 
